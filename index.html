@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Zilla+Slab&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family: 'Zilla Slab', serif;
+font-family: 'IM Fell French Canon SC', serif;}
+
+
+.header{
+color: #353535;
+display:flex;
+justify-content:center;
+text-transform: uppercase;
+margin-top: 30px;
+font-size: 22px;
+}
+
+
+.image{
+display: flex;
+justify-content: space-around;
+padding: 80px 0 0 0;}
+
+.name{
+margin-top: 30px;
+font-size: 18px;
+padding-bottom: 10px; 
+display: flex;
+justify-content: space-around;
+text-transform: uppercase;
+}
+
+.line{
+display: flex;
+justify-content: space-around;
+}
+
+#lines{
+width:50px;
+height: 5px;
+background: #3dc9b3;}
+
+.text{
+display: flex;
+color: #8c9398;
+font-size: 18px;
+font-weight: 70px;
+text-align: center;
+padding: 0 10px 0 10px;}
+
+.l {
+border-top: 1px dashed #000;
+}
+
+
+</style>
+
+</head>
+<body>
+    <header> <div class="header"><p>love what you do, and you'll do it well</p></div></header>
+    <div class="l"></div>
+
+<div class="image">
+	<img id="comp" src="computer.png">
+    <img id="cod" src="code.png">
+    <img id="hea" src="heart.png">
+</div>
+
+
+<div class="name">
+    <p>digital designer//</p>
+    <p>web development//</p>
+    <p>we love you//</p>
+</div>
+
+<div class="line">
+<div id="lines"></div>
+<div id="lines"></div>
+<div id="lines"></div>
+</div>
+
+<div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
+</div>
+
+
+
+
+
+   <script>
+let comp= document.getElementById("comp");
+let cod= document.getElementById("cod");
+let hea= document.getElementById("hea");
+function Computer(){alert("Computer");}
+comp.addEventListener('click',Computer);
+function Code(){alert("Code");}
+cod.addEventListener('click',Code);
+function Heart(){alert("Heart");}
+hea.addEventListener('click',Heart);
+   </script>
+</body>
+</html>
