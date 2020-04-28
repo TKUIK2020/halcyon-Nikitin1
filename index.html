@@ -29,8 +29,7 @@ padding: 80px 0 0 0;}
 
 .name{
 margin-top: 30px;
-font-size: 18px;
-padding-bottom: 10px; 
+font-size: 18px; 
 display: flex;
 justify-content: space-around;
 text-transform: uppercase;
@@ -49,7 +48,7 @@ background: #3dc9b3;}
 .text{
 display: flex;
 color: #8c9398;
-font-size: 18px;
+font-size: 17px;
 font-weight: 70px;
 text-align: center;
 padding: 0 10px 0 10px;}
@@ -58,16 +57,41 @@ padding: 0 10px 0 10px;}
 border-top: 1px dashed #000;
 }
 
+.img{
+display: flex;
+justify-content: space-around;
+}
+
+.color{
+background: #23272f;
+border-radius: 50%;
+border: 9px solid #23272f;
+width: 15px;
+height: 15px;
+
+}
+
+.lab_4{
+padding: 120px 0 0 0;}
+
+.color:hover{
+background: #57d0bd;
+border-radius: 50%;
+border: 9px solid #57d0bd;
+width: 15px;
+height: 15px;
+}
 
 </style>
 
 </head>
 <body>
-    <header> <div class="header"><p>love what you do, and you'll do it well</p></div></header>
+<div class="lab_3">
+    <div class="header"><p>love what you do, and you'll do it well</p></div>
     <div class="l"></div>
 
 <div class="image">
-	<img id="comp" src="computer.png">
+    <img id="comp" src="computer.png">
     <img id="cod" src="code.png">
     <img id="hea" src="heart.png">
 </div>
@@ -86,15 +110,68 @@ border-top: 1px dashed #000;
 </div>
 
 <div class="text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget. </p>
+</div>
+</div>
+
+
+
+<div class="lab_4">
+<div class="header"><p>we`re a team that adore what we do</p></div>
+<div class="l"></div>
+
+<div class="image">
+    <img id="jo" src="John.png">
+    <img id="cer" src="Cersei.png">
+    <img id="jan" src="Janei.png">
+</div>
+
+<div class="name">
+    <p>john snow</p>
+    <p>cersei lannister</p>
+    <p>jamie lannister</p>
+</div>
+
+<div class="line">
+<div id="lines"></div>
+<div id="lines"></div>
+<div id="lines"></div>
+</div>
+
+<div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+</div>
+
+<div class="img">
+    <p>
+       <a href="https://www.facebook.com/"><img src="tochka.png"  class="color" hspace="5"></a>
+       <a href="https://twitter.com/"><img src="twitter.png"  class="color" hspace="5"></a>
+       <a href="https://mail.ru/"><img src="mail.png"  class="color" hspace="5"></a>
+    </p>
+    <p>
+       <a href="https://www.facebook.com/"><img src="tochka.png" class="color" hspace="5"></a>
+       <a href="https://twitter.com/"><img src="twitter.png"  class="color" hspace="5"></a>
+       <a href="https://mail.ru/"><img src="mail.png"  class="color" hspace="5"></a>
+    </p>
+    <p>
+       <a href="https://www.facebook.com/"><img src="tochka.png"  class="color" hspace="5"></a>
+       <a href="https://twitter.com/"><img src="twitter.png"  class="color" hspace="5"></a>
+       <a href="https://mail.ru/"><img src="mail.png"  class="color" hspace="5"></a>
+    </p>
+    
 </div>
 
 
 
 
 
+
+
+</div>
    <script>
 let comp= document.getElementById("comp");
 let cod= document.getElementById("cod");
@@ -105,6 +182,19 @@ function Code(){alert("Code");}
 cod.addEventListener('click',Code);
 function Heart(){alert("Heart");}
 hea.addEventListener('click',Heart);
+
+let jo= document.getElementById("jo");
+let cer= document.getElementById("cer");
+let jan= document.getElementById("jan");
+function John_snow(){alert("This is John Snow");}
+jo.addEventListener('click',John_snow);
+function Cersei_lan(){alert("This is Cersei Lannister");}
+cer.addEventListener('click',Cersei_lan);
+function Janei_lan(){alert("This is Janei Lannister");}
+jan.addEventListener('click',Janei_lan);
+
+
+
    </script>
 </body>
 </html>
