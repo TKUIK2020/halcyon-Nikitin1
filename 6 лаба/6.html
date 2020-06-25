@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 лабораторная</title>
+    <link rel="stylesheet" type="text/css" href="6.css"/>
+</head>
+<body>
+    <div class="header">
+        <p class="text1">I got 99 problems</p>
+        <p class="text2">But design aint one</p>
+    </div>
+    <div class="main">
+        <div class="block">
+            <img src="mind.png"  class="img">
+            <p class="text3">creative minds</p>         
+            <p class="text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero</p>
+        </div>
+        <div class="block">
+            <img src="think.png"  class="img">
+            <p class="text3">think alike</p>            
+            <p class="text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero</p>
+        </div>
+        <div class="block">
+            <img src="dog.png"  class="img">
+            <p class="text3">pixel perfection</p>
+            <p class="text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="ramka"><p class="raamka">ignite your passion</p></div>
+    </div>
+    
+    <script>
+        const URL = "https://jsonplaceholder.typicode.com/posts"
+    var xhr = new XMLHttpRequest()
+    xhr.open("POST", URL)
+	xhr.onload = () =>{console.log(xhr.response)}
+    var body = {title: 'foo', body: 'bar', userId: 1} 
+   xhr.open('POST',URL);
+   xhr.send(body);
+   xhr.onload=() =>alert(xhr.response);
+    </script>
+</body>
+</html>
