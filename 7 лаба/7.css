@@ -1,0 +1,86 @@
+
+    #main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(bg.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+    }
+    .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+    height: 120px;
+    }
+    
+    .text{
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 15px;
+    font-size: 40px;
+    text-align: center;
+    }
+    #text3{
+    color: #a1a9b0;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    }
+    #text4{
+    width: 900px;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    top: 140px;
+    color: #a1a9b0;
+    font-family: 'PT Sans Caption', sans-serif;
+    }
+    
+    .text5{
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    }
+    #p{color: #ffffff;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;}
+
+    #but{
+    position: relative;
+    left: 85%;
+    top: 5%;
+    transform: translate(-85%, 0);
+    background-image: url(mobile_nav.png);
+    height: 25px;
+    width: 30px;
+        }
+    
+    #text2{
+    color: #a1a9b0;
+    }
+    #img{
+    height: 24px;
+    width: 500px;
+    position: relative;
+    position: relative;
+    top: 120px;
+    
+    }
+    #but2{
+    width: 170px;
+    height: 50px;
+    background-color: #3cc9b2;
+    position: relative;
+    top: 50%;
+    }
